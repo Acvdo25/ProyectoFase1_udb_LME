@@ -1,0 +1,180 @@
+{
+    "Promociones": [
+        {
+            "id": 1,
+            "name": "Triple hut box masa gran hut",
+            "description": "Descripción del producto 1",
+            "price": 18.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_30-03-2026-14-48-58_MD.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Banquete de pan pizza grande de 1 ingrediente + orden de palitroques",
+            "description": "Descripción del producto 2",
+            "price": 13.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_30-03-2026-14-50-03_MD.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Combo 2 super personales",
+            "description": "Descripción del producto 3",
+            "price": 14.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_17-04-2026-09-20-29_MD.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Dúo Super Personal + palitroques",
+            "description": "Descripción del producto 3",
+            "price": 12.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_06-04-2026-09-31-28_MD.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Cheesy Pops Dip & Crunch",
+            "description": "Descripción del producto 3",
+            "price": 17.75,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-06-2025-10-23_MD.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Pan pizza gigante de especialidad + orden de cheese sticks",
+            "description": "Descripción del producto 3",
+            "price": 18.75,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-08-2025-10-09-15_MD.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Banquete Futbolero",
+            "description": "Descripción del producto 3",
+            "price": 21.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_21-03-2026-09-29-19_MD.jpg"
+        }
+    ],
+    "Entradas": [
+        {
+            "id": 1,
+            "name": "Que Papas",
+            "description": "Descripción del producto 1",
+            "price": 4.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_07-04-2025-14-48_MD.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Palitroques",
+            "description": "Descripción del producto 2",
+            "price": 3.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_17-03-2025-12-01_MD.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Hut Cheese Dippers",
+            "description": "Descripción del producto 3",
+            "price": 5.25,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_21-03-2025-08-52_MD.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Papas Hut",
+            "description": "Descripción del producto 3",
+            "price": 5.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_17-03-2025-11-46_MD.jpg"
+        }
+    ],
+    "PlatosFuertes": [
+        {
+            "id": 8,
+            "name": "Pizza Chipotle Bomb",
+            "description": "Descripción del producto 3",
+            "price": 16.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/4550_1_08-11-2023-10-50.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Pizza Hawaiana Pastor",
+            "description": "Descripción del producto 3",
+            "price": 16.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_05-06-2025-15-26_MD.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Pizza Full Extras",
+            "description": "Descripción del producto 3",
+            "price": 16.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/4548_1_08-11-2023-10-49.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Pizza Cuatro Quesos",
+            "description": "Descripción del producto 3",
+            "price": 16.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/4820_1_03-01-2024-21-52.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Pizza Pollo Primavera Chipotle",
+            "description": "Descripción del producto 3",
+            "price": 16.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_13-06-2024-00-41_MD.jpg"
+        }
+    ],
+    "Bebidas": [
+        {
+            "id": 1,
+            "name": "Botella agua",
+            "description": "Descripción del producto 1",
+            "price": 18.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_27-11-2025-23-26-56_MD.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Soda 7 Up",
+            "description": "Descripción del producto 2",
+            "price": 13.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-03-2026-09-49-21_MD.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Soda Pepsi Light",
+            "description": "Descripción del producto 3",
+            "price": 14.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_18-06-2025-22-39_MD.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Soda Mirinda Naranja",
+            "description": "Descripción del producto 3",
+            "price": 12.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-03-2026-09-50-08_MD.jpg"
+        }
+    ],
+    "Postres": [
+        {
+            "id": 1,
+            "name": "Cuchareable Cheesecake",
+            "description": "Descripción del producto 1",
+            "price": 2.25,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-03-2026-15-38-42_MD.jpg"
+        },
+        {
+            "id": 2,
+            "name": "5 Nutella Popsp",
+            "description": "Descripción del producto 2",
+            "price": 2.95,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_07-11-2025-15-14-49_MD.jpg"
+        },
+        {
+            "id": 3,
+            "name": "10 Nutella Pops",
+            "description": "Descripción del producto 3",
+            "price": 3.50,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_05-11-2025-09-27-25_MD.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Cuchareable de Tres Leches",
+            "description": "Descripción del producto 3",
+            "price": 2.25,
+            "image": "https://www.pizzahut.com.sv/static/media/images/images/jpg/1_19-03-2026-15-39-48_MD.jpg"
+        }
+    ]
+}

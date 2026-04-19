@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurante</title>
+
+  <!-- Bootstrap desde node_modules -->
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<div class="container pt-2">
+  <div class="row g-0">
+    <!-- PEDIR A DOMICILIO -->
+    <div class="col-md-6 text-center py-3 text-white fw-bold" style="background-color: #ff0000;">
+      <i class="bi bi-truck"></i>
+      QUIERO PEDIR A DOMICILIO
+    </div>
+
+    <!-- RECOGER EN TIENDA -->
+    <div class="col-md-6 text-center py-3 bg-dark text-white fw-bold">
+      <i class="bi bi-shop"></i>
+      QUIERO RECOGER EN TIENDA
+    </div>
+
+  </div>
+</div>
+<div class="container my-4">
+  <!-- TITULO -->
+  <h1 class="fw-bold mb-4">Menú</h1>
+
+  <h2 class="fw-bold mb-4">Entradas Disponibles</h2>
+  <!-- GRID -->
+  <div class="row g-4" id="productos-Entradas">
+    <!-- Aquí se cargarán los productos dinámicamente -->
+  </div>
+
+  <h2 class="fw-bold mt-5 mb-4">Platos Fuertes Disponibles</h2>
+  <div class="row g-4" id="productos-PlatosFuertes">
+    <!-- Aquí se cargarán los productos dinámicamente -->
+  </div>
+
+  <h2 class="fw-bold mt-5 mb-4">Bebidas Disponibles</h2>
+  <div class="row g-4" id="productos-Bebidas">
+    <!-- Aquí se cargarán los productos dinámicamente -->
+  </div>
+
+  <h2 class="fw-bold mt-5 mb-4">Postres Disponibles</h2>
+  <div class="row g-4" id="productos-Postres">
+    <!-- Aquí se cargarán los productos dinámicamente -->
+  </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Cargar el header
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../layout/navbar.html")
+                    .then(r => r.text())
+                    .then(data => {
+                        document.getElementById("navbar").innerHTML = data;
+                    });
+            fetch("src/layout/footer.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+                
+            //Llamado de productos
+            fetch("../../assets/productos.json")
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById("productos-Entradas");
+                    data.Entradas.forEach(product => {
+                        const col = document.createElement("div");
+                        col.className = "col-6 col-md-3 text-center";
+                        col.innerHTML = `
+                        <div class="card border-0">
+                            <img src="${product.image}" class="card-img-top rounded">
+                            <div class="card-body p-2">
+                            <p class="fw-bold">${product.name}</p>
+                            <span>Precio: $${product.price}</span>
+                        </div>
+                    `;
+                    container.appendChild(col);
+                });
+            });
+            //Llamado de productos
+            fetch("../../assets/productos.json")
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById("productos-PlatosFuertes");
+                    data.PlatosFuertes.forEach(product => {
+                        const col = document.createElement("div");
+                        col.className = "col-6 col-md-3 text-center";
+                        col.innerHTML = `
+                        <div class="card border-0">
+                            <img src="${product.image}" class="card-img-top rounded">
+                            <div class="card-body p-2">
+                            <p class="fw-bold">${product.name}</p>
+                            <span>Precio: $${product.price}</span>
+                        </div>
+                    `;
+                    container.appendChild(col);
+                });
+            });
+            
+            //Llamado de productos
+            fetch("../../assets/productos.json")
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById("productos-Bebidas");
+                    data.Bebidas.forEach(product => {
+                        const col = document.createElement("div");
+                        col.className = "col-6 col-md-3 text-center";
+                        col.innerHTML = `
+                        <div class="card border-0">
+                            <img src="${product.image}" class="card-img-top rounded">
+                            <div class="card-body p-2">
+                            <p class="fw-bold">${product.name}</p>
+                            <span>Precio: $${product.price}</span>
+                        </div>
+                    `;
+                    container.appendChild(col);
+                });
+            });
+
+            //Llamado de productos
+            fetch("../../assets/productos.json")
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById("productos-Postres");
+                    data.Postres.forEach(product => {
+                        const col = document.createElement("div");
+                        col.className = "col-6 col-md-3 text-center";
+                        col.innerHTML = `
+                        <div class="card border-0">
+                            <img src="${product.image}" class="card-img-top rounded">
+                            <div class="card-body p-2">
+                            <p class="fw-bold">${product.name}</p>
+                            <span>Precio: $${product.price}</span>
+                        </div>
+                    `;
+                    container.appendChild(col);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
