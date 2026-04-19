@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante</title>
+
+    <!-- Bootstrap desde node_modules -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="bg-danger text-white text-center py-5">
+        <h1 class="fw-bold">Nuestra Historia</h1>
+        <p class="lead">Pasión por la pizza desde el primer día</p>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="https://cdn-blog.joinnus.com/wp-content/uploads/2025/02/07155559/pizza.jpg"
+                    class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold">¿Quiénes Somos?</h2>
+                <p>
+                    Somos una pizzería comprometida con ofrecer los mejores sabores.
+                    Nacimos como un pequeño negocio familiar y hoy seguimos manteniendo
+                    la misma pasión, calidad y tradición.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="fw-bold text-center mb-4">Nuestra Filosofía</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-bullseye display-5 text-danger"></i>
+                        <h5 class="fw-bold mt-3">Misión</h5>
+                        <p>Ofrecer productos de calidad y experiencias inolvidables.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-eye display-5 text-danger"></i>
+                        <h5 class="fw-bold mt-3">Visión</h5>
+                        <p>Ser la pizzería líder en sabor e innovación.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-heart display-5 text-danger"></i>
+                        <h5 class="fw-bold mt-3">Valores</h5>
+                        <p>Calidad, compromiso, pasión y trabajo en equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark text-white text-center p-4 rounded mt-5">
+        <h4 class="fw-bold">¿Listo para probar nuestras pizzas?</h4>
+        <a href="/src/pages/menu.html" class="btn btn-danger mt-2">Ver Menú</a>
+    </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        //Cargar el header
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("/src/layout/navbar.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
+            fetch("/src/layout/footer.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("footer").innerHTML = data;
+                });
+        });
+    </script>
+
+</body>
+
+</html>
