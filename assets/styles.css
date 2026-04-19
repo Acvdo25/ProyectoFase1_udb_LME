@@ -1,0 +1,61 @@
+body {
+  background: #f8f4ef;
+  color: #222;
+}
+
+.hero-section {
+  background:
+    linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.55)),
+    url("https://www.pizzahut.com.sv/static/media/images/images/jpg/1_SM_21-03-2026-09-29.jpg") center/cover;
+}
+
+.feature-panel,
+.store-card,
+.gallery-card,
+.contact-panel {
+  border-radius: 1rem;
+}
+
+.feature-panel {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.section-soft {
+  background: linear-gradient(180deg, #fff 0%, #f2ebe5 100%);
+}
+
+.store-card {
+  border-top: 4px solid #e4002b;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-card:hover,
+.gallery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.gallery-card {
+  overflow: hidden;
+}
+
+.gallery-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.site-footer {
+  background: #1f1f1f;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .gallery-card img {
+    height: 220px;
+  }
+}
